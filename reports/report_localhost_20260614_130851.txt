@@ -1,0 +1,34 @@
+============================================================
+               VULNERABILITY SCANNER REPORT
+============================================================
+Target Host : localhost
+Scan Time   : 2026-06-14 13:08:51
+------------------------------------------------------------
+SUMMARY OF SCAN
+------------------------------------------------------------
+Total Ports Scanned : 8
+Open Ports          : 0 (None)
+Closed Ports        : 8
+Security Findings   : 0
+------------------------------------------------------------
+PORT DETAILS & FINDINGS
+------------------------------------------------------------
+[*] Port 21 (FTP (File Transfer Protocol)): CLOSED
+
+[*] Port 22 (SSH (Secure Shell)): CLOSED
+
+[*] Port 23 (Telnet): CLOSED
+
+[*] Port 25 (SMTP (Simple Mail Transfer Protocol)): CLOSED
+
+[*] Port 53 (DNS (Domain Name System)): CLOSED
+
+[*] Port 80 (HTTP (Hypertext Transfer Protocol)): CLOSED
+
+[*] Port 443 (HTTPS (HTTP Secure)): CLOSED
+
+[*] Port 3306 (MySQL Database): CLOSED
+
+============================================================
+End of vulnerability report.
+============================================================

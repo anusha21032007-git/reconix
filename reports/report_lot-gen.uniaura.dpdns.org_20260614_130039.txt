@@ -1,0 +1,39 @@
+============================================================
+               VULNERABILITY SCANNER REPORT
+============================================================
+Target Host : lot-gen.uniaura.dpdns.org
+Scan Time   : 2026-06-14 13:00:39
+------------------------------------------------------------
+SUMMARY OF SCAN
+------------------------------------------------------------
+Total Ports Scanned: 8
+Open Ports         : 2 (80, 443)
+Closed Ports       : 6
+------------------------------------------------------------
+PORT DETAILS & FINDINGS
+------------------------------------------------------------
+[*] Port 21 (FTP (File Transfer Protocol)): CLOSED
+
+[*] Port 22 (SSH (Secure Shell)): CLOSED
+
+[*] Port 23 (Telnet): CLOSED
+
+[*] Port 25 (SMTP (Simple Mail Transfer Protocol)): CLOSED
+
+[*] Port 53 (DNS (Domain Name System)): CLOSED
+
+[*] Port 80 (HTTP (Hypertext Transfer Protocol)): OPEN
+    - Service Banner: Server: cloudflare
+    - Risk: HTTP traffic is sent in cleartext, exposing users to session hijacking and credential theft via eavesdropping. Web applications on this port might also contain application-level security flaws (e.g. XSS, SQLi).
+    - Recommendation: Enforce HTTPS (port 443) by redirecting all traffic from port 80. Configure HTTP Strict Transport Security (HSTS) headers.
+
+[*] Port 443 (HTTPS (HTTP Secure)): OPEN
+    - Service Banner: Server: cloudflare
+    - Risk: While HTTPS encrypts traffic, servers can be vulnerable to SSL/TLS flaws if utilizing outdated cipher suites, expired certificates, or old protocols (SSLv2, SSLv3, TLS 1.0, TLS 1.1).
+    - Recommendation: Ensure the server is configured to support only secure modern TLS protocols (TLS 1.2, TLS 1.3), disable weak ciphers, and keep SSL certificates up-to-date.
+
+[*] Port 3306 (MySQL Database): CLOSED
+
+============================================================
+End of vulnerability report.
+============================================================
