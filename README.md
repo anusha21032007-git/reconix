@@ -19,5 +19,7 @@ Reconix is a CLI-based vulnerability scanner developed in Python for basic recon
 ## How to Run
 
 git clone <repo-link>
+
 cd Reconix
+
 python scanner.py
